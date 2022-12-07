@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyBlog</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <title>Blog</title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", "http://fonts.googleapis.com/css?family=Raleway:400,700" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_importmap_tags %>
+  <%= favicon_link_tag "main.png" %>
+  <%= csrf_meta_tags %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+  <div id="sidebar">
+      <div id="logo">
+        <%= link_to root_path do %>
+          <%= image_tag "logo.png" %>
+        <% end %>
+      </div>
+
+      <ul>
+        <li class="category">Website</li>
+        <li><%= link_to "Blog", root_path %></li>
+        <%# <li><%= link_to "About", about_path %></li>
+      </ul>
+
+      <ul>
+        <li class="category"></li>
+			  <li><a href="#">Twitter</a></li>
+			  <li><a href="#">Instagram</a></li>
+			  
+      </ul>
+  
+
+  
+
+  </div>
     <%= yield %>
+
+    
   </body>
 </html>
