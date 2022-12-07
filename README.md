@@ -1,24 +1,16 @@
-# README
+# MY-RECIPE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Description
+This is a web app built to help users to post their recipes about their favourite meals. The user has to log in before being given the permission to create, delete or update the recipe. Beside, a user can also comment on their blogs incase to provide any clarifications. However if a user is not signed in, they can only view the recipes.
 
-Things you may want to cover:
+## How to Install and run the project
+- Clone the repository i.e git clone the repo name
+- Run bundle install to download all the dependencies
+- Run rails s in the project directory to start the server
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Technologies
+- HTML
+- CSS
+- Javascript
+- Ruby on Rails
+# LICENSE
